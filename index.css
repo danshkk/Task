@@ -1,4 +1,10 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
+
+/* Использумые шрифты на index.html
+Muli Regular - normal normal
+Muli Bold - bold normal
+Muli ExtraBold - 800 normal
+  */
 @font-face {
     font-family: MuliRegular; 
     src: url(./assets/fonts/Muli-Regular.woff); 
