@@ -1,7 +1,7 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 
 /* Использумые шрифты на index.html
-Muli Regular - normal normal
+Muli Regular - normal normal 
 Muli Bold - bold normal
 Muli ExtraBold - 800 normal
   */
@@ -24,6 +24,8 @@ body {
 a {
     text-decoration: none;
 }
+
+
 
 
 /* Header */
