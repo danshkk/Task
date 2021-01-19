@@ -2,16 +2,48 @@
 
 /* Использумые шрифты на index.html
 Muli Regular - normal normal 
-Muli Bold - bold normal
+Muli Bold - 700 normal
 Muli ExtraBold - 800 normal
+Muli ExtraBoldItalic - 800 italic
+Poppins Medium - 500 normal
+Poppins SemiBold - 600 normal
   */
 @font-face {
-    font-family: MuliRegular; 
-    src: url(./assets/fonts/Muli-Regular.woff); 
+    font-family: Muli-Regular; 
+    src: url(../assets/fonts/Muli-Regular.woff); 
 }
+
+@font-face {
+    font-family: Muli-Bold;
+    src: url(../assets/fonts/Muli-Bold.woff);
+}
+
+@font-face {
+    font-family: Muli-ExtraBold;
+    src: url(../assets/fonts/Muli-ExtraBold.woff);
+}
+
+@font-face {
+    font-family: Muli-ExtraBoldItalic;
+    src: url(../assets/fonts/Muli-ExtraBoldItalic.woff);
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* Общие стили */
 html,
@@ -28,8 +60,14 @@ a {
 
 
 
-/* Header */
 
+/* Header */
+header {
+    background: url(/assets/images/header-bg-img.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
 
 /* Smoothies */
 
