@@ -57,6 +57,32 @@ a {
     text-decoration: none;
 }
 
+/* Оформляем стили текстов */
+.btn, h2, .title, h3 {
+    font-family: Muli-ExtraBold; 
+    color: #f7ae3b;
+    font-size: 50px;
+}
+
+.title-small {
+    font-family: Muli-Bold;
+    font-size: 16px; 
+    color: white; 
+
+}
+
+.text-dark {
+    font-family: Muli-regular;
+    font-size: 18px;
+    color: #1e1e1e; 
+}
+
+.text-white {
+    font-family: Muli-regular;
+    font-size: 18px; 
+    color: #ffffff; 
+}
+
 
 
 
@@ -69,20 +95,51 @@ header {
     background-size: contain;
 }
 
-/* Smoothies */
+.menu__item {
+    color: white;
+}
 
+/* Smoothies */
+.smoothies {
+    background-color: white; 
+
+}
 
 /* About */
-
+.about {
+    background-color: #11816d; 
+    height: 100vh;
+}
 
 /* Products */
+.products__item {
+    width: 480px;
+    height: 720px;
+}
 
+.products__item--bg-brown {
+    background-color: #632b17;
+}
+
+.products__item--bg-green {
+    background-color: #178670;
+}
+
+.products__item--bg-yellow {
+    background-color: #f7ae3b;
+}
+
+.products__item--bg-red {
+    background-color: #c3471b;
+}
 
 /* Story */
 
 
-/* Testimonials */
-
+/* Feedback */
+.feedback {
+    background-color: #672f1b; 
+}
 
 /* Blog */
 
@@ -91,8 +148,11 @@ header {
 
 
 /* Footer */
-footer {
+.footer-top {
     background-color: #f6ab3b;
+}
+.footer-bottom {
+    background-color: #6c2c1c; 
 }
 
 
