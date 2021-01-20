@@ -49,6 +49,12 @@ Poppins SemiBold - 600 normal
 
 a {
     text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
 }
 
 /* Общие стили */
@@ -59,9 +65,6 @@ body {
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
 
 /* Оформляем стили текстов */
 .btn, h2, .title, h3 {
@@ -89,96 +92,130 @@ a {
     color: #ffffff; 
 }
 
-.btn {
-    width: 200px;
-    height: 60px;
-    background-color: transparent;
-    font-size: 21px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-}
 
-/* Header */
-header {
-    background: url(/assets/images/header-bg-img.png) no-repeat;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    color: white;
-    border: 2px solid rgb(46, 11, 175);
-}
 .menu__list, .personal__list, .social__list {
     list-style: none;
 }
 
+/* Header */
+.header {
+    height: 100vh;
+    background: url(/assets/images/header-bg-img.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
 
 .header__top {
-    border: 2px solid green;
-    /* padding: 70px 100px 100px; */
+    padding: 70px 100px 100px; 
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header__menu {
-    border: 1px solid red;
-}
+/*header menu */
 
 .menu__list {
-    
     border: 1px solid red;
+    display: flex;
 }
 
-.menu-item {
+.menu__item {
     margin-right: 35px;
 }
 
 .menu__link {
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    font-family: "Muli-Bold", sans-serif;
-    
-}    
+    font-family: 'Muli-Bold', sans-serif;
+    color: white;
+}
 
 
+/*logo*/
 
-.header__logo {
+.logo {
     border: 1px solid red; 
     
 }
-
+/* Right block personal +social */
 .personal-social {
-    border: 2px solid red;
-    
-
+    width: 420px;
+    display: flex;
+    align-items: center;
+}
+/* personal*/
+.personal__list {
+    border: 1px solid red;
+    display: flex;
 }
 
-.header__personal {
-    border: 1px solid red; 
+.personal__list-item {
+    margin-right: 45px;
 }
 
-.header__social {
-    border: 1px solid red; 
+.personal__cart-count {
+}
+
+/*social*/
+.social__list {
+    border: 1px solid red;
+    display: flex;
+} 
+
+.social__list-item {
+    margin-left: 10px;
+}
+
+.social__link {
+    display: inline-block;
+    height: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    background-color: white;
+    text-align: center;
+    line-height: 2;
+    border-radius: 50;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
 }
 
 
+
+
+/* header content*/
+
+
+.header__content {
+    border: 1px solid red;
+}
+
+/* BTN */
 .header__btn {
     height: 70px;
     width: 280px;
+}
+
+.btn {
     border-radius: 35px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
-    font-family: 'Muli-Regular', sans-serif;
-    color: white;
-    background-color: #0aa566;
-    border: 1px solid red; 
+    font-size: 24px;
+    padding: 0px 38px;
+
 }
+
+.btn--green-bg {
+    border: none;
+    background-color:#0aa566; 
+}
+
 
 /* Smoothies */
 .smoothies {
@@ -241,10 +278,6 @@ header {
 
 .products__item--bg-red {
     background-color: #c3471b;
-}
-
-.btn {
-    border: 1px solid red; 
 }
 
 /* Story */
