@@ -49,6 +49,7 @@ Poppins SemiBold - 600 normal
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 ul {
@@ -124,6 +125,10 @@ body {
     margin-right: 35px;
 }
 
+.menu__item:last-child {
+    margin-right: 0px;
+}
+
 .menu__link {
     text-decoration: none;
     text-transform: uppercase;
@@ -141,9 +146,12 @@ body {
 }
 /* Right block personal +social */
 .personal-social {
-    width: 420px;
     display: flex;
     align-items: center;
+}
+
+.header__personal {
+    margin-right: 135px;
 }
 /* personal*/
 .personal__list {
@@ -155,8 +163,26 @@ body {
     margin-right: 45px;
 }
 
-.personal__cart-count {
+.personal__list-item:last-child {
+    margin-right: 0px;
 }
+
+.personal__cart-count {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    
+}
+
 
 /*social*/
 .social__list {
@@ -168,19 +194,25 @@ body {
     margin-left: 10px;
 }
 
+.social__list-item:first-child {
+    margin-left: 0px;
+}
+
 .social__link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 35px;
     min-width: 35px;
     max-width: 35px;
     background-color: white;
     text-align: center;
     line-height: 2;
-    border-radius: 50;
-    -webkit-border-radius: 50;
-    -moz-border-radius: 50;
-    -ms-border-radius: 50;
-    -o-border-radius: 50;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 
@@ -191,6 +223,8 @@ body {
 
 .header__content {
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
 }
 
 /* BTN */
@@ -207,6 +241,9 @@ body {
     -o-border-radius: 35px;
     font-size: 24px;
     padding: 0px 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -219,27 +256,95 @@ body {
 
 /* Smoothies */
 .smoothies {
-    background-color: white; 
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
 
+.smoothies__title {
+    border: 1px solid red;
+    text-align: center;
+    margin-top: 100px;
+    
+}
 
+.smoothies__text {
+    border: 1px solid red;
+    width: 915px;
+    align-self: center;
+    margin-bottom: 60px;
+    line-height: 2;
+    color: #1e1e1e;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 60px;
+}
+
+.smoothies__features {
+    border: 3px solid red;
+    align-self: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-bottom: 60px;
+}
+
+.smoothies__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 195px;
+}
+
+.smoothies__img {
+    margin-bottom: 30px;
+    align-self: center;
 }
 .title--orange {
     color: #f2612d;
     font-size: 25px;
-    
+    text-align: center;
 }
+
 
 
 /* About */
 .about {
     background-color: #11816d; 
-    height: 100vh;
+    background-size:cover; 
+    background-position:center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.about__img {
+    border: 1px solid red;
+}
 
+.about__content {
+    border: 1px solid yellow;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
 .about__title {
     font-size: 55px;
     color: white;
+    border: 1px solid red;
+    text-align: left;
+    width: 700px;
+    height: 200px;
+    margin-bottom: 70px;
+    margin-right: 350px;
+    margin-top: 100px;
+    line-height: 1;
 
 }
 
@@ -247,8 +352,28 @@ body {
     color: #cae941; 
 }
 
+.about__list {
+    border: 1px solid red;
+    width: 410px;
+    height: 400px;
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 70px;
+    font-size: 21px;
+}
+
+
 .text-white--bold {
     font-family: Muli-ExtraBold;
+}
+
+.about__btn {
+    width: 380px;
+    height: 60px;
+    border: 1px solid red;
+    margin-bottom: 110px;
+    background-color: transparent;
+    border: 1px solid #f8b231;
 }
 
 /* Products */
