@@ -49,7 +49,6 @@ Poppins SemiBold - 600 normal
 
 a {
     text-decoration: none;
-    display: inline-block;
 }
 
 ul {
@@ -214,6 +213,7 @@ body {
 .btn--green-bg {
     border: none;
     background-color:#0aa566; 
+    color: white;
 }
 
 
