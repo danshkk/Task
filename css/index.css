@@ -38,6 +38,16 @@ Poppins SemiBold - 600 normal
     src: url(../assets/fonts/Poppins-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: Muli-Italic;
+    src: url(../assets/fonts/Muliitalic.woff);
+}
+
+@font-face {
+    font-family: Muli-SemiBoldItalic;
+    src: url(../assets/fonts/Mulisemibolditalic.woff);
+}
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 * {
@@ -90,6 +100,24 @@ body {
     font-family: Muli-regular;
     font-size: 18px; 
     color: #ffffff; 
+}
+
+.btn {
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    font-size: 21px;
+    color: white;
+    padding: 0px 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 205px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid white;
 }
 
 
@@ -233,20 +261,6 @@ body {
     width: 280px;
 }
 
-.btn {
-    border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
-    font-size: 24px;
-    padding: 0px 38px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
 .btn--green-bg {
     border: none;
     background-color:#0aa566; 
@@ -264,14 +278,12 @@ body {
 }
 
 .smoothies__title {
-    border: 1px solid red;
     text-align: center;
     margin-top: 100px;
     
 }
 
 .smoothies__text {
-    border: 1px solid red;
     width: 915px;
     align-self: center;
     margin-bottom: 60px;
@@ -283,7 +295,6 @@ body {
 }
 
 .smoothies__features {
-    border: 3px solid red;
     align-self: center;
     display: flex;
     flex-direction:row;
@@ -300,12 +311,37 @@ body {
     align-items: center;
     width: 250px;
     height: 195px;
+    flex-grow: 1;
+}
+.smoothies__feature:nth-child(1)  {
+    border-right:  2px solid #f6edde;
+    border-bottom: 2px solid #f6edde; 
+}
+.smoothies__feature:nth-child(2)  {
+    border-right:  2px solid #f6edde;
+    border-bottom: 2px solid #f6edde; 
 }
 
+.smoothies__feature:nth-child(3)  {
+    border-right:  2px solid #f6edde;
+    border-bottom: 2px solid #f6edde; 
+}
+.smoothies__feature:nth-child(4)  {
+    border-bottom:  2px solid #f6edde;
+}
+.smoothies__feature:nth-child(5)  {
+    border-right:  2px solid #f6edde;
+}
+.smoothies__feature:nth-child(6)  {
+    border-right:  2px solid #f6edde;
+}
+.smoothies__feature:nth-child(7)  {
+    border-right:  2px solid #f6edde;
+}
 .smoothies__img {
     margin-bottom: 30px;
     align-self: center;
-}
+} 
 .title--orange {
     color: #f2612d;
     font-size: 25px;
@@ -362,33 +398,6 @@ body {
 }
 
 /* Products */
-.products {
-    display: flex;
-    justify-content: flex-start;
-    background-position:center; 
-    background-size:cover; 
-}
-
-.products__img {
-    margin-top: 130px;
-    margin-bottom: 35px;
-}
-
-.products__title {
-    font-size: 24px;
-}
-.products__capacity {
-    font-family: Mili-Regular;
-    font-size: 21px;
-}
-.products__item {
-    border: 1px solid red;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .products__item--bg-brown {
     background-color: #632b17;
@@ -407,22 +416,137 @@ body {
     background-color: #c3471b;
 }
 
-/* Story */
+.products {
+    display: flex;
+    justify-content: flex-start;
+    background-position:center; 
+    background-size:cover; 
+}
 
+.products__item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__img {
+    margin-top: 130px;
+    margin-bottom: 35px;
+}
+
+.products__title {
+    font-size: 24px;
+    text-align: center;
+}
+.products__capacity {
+    font-family: 'Muli-Italic';
+    font-size: 21px;
+    margin-bottom: 65px;
+    margin-top: 5px;
+}
+
+.btn--white-border {
+    margin-bottom: 80px;
+}
+
+
+
+/* Story */
+.story {
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story__title {
+    border: 2px solid red;
+}
+
+.story__text {
+    border: 2px solid red;
+    width: 500px;
+    text-align: left;
+}
+
+.story__btn {
+    border: 2px solid red;
+}
+
+.btn--green {
+    background-color:#0aa566 ;
+    width: 300px;
+    height: 60px;
+}
+
+.story__img {
+    border: 2px solid red;
+    align-self: flex-end;
+}
 
 /* Feedback */
 .feedback {
-    background-color: #672f1b; 
+    background-color: #672f1b;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
 }
 
+.feedback__title {
+    margin-top: 115px;
+    margin-bottom: 120px;
+}
 .title--red {
-    color: #f2612d; 
+    color: #f2612d;
+    
+}
+
+.feedback__content {
+    display: flex;    
+}
+
+.feedback__content-subject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.feedback__text {
+    width: 470px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 40px;
 }
 
 .feedback__subtext {
     color: #f7ae3b; 
     font-size: 18px;
+    font-family: 'Muli-SemiBoldItalic';
+    align-self:center; 
 }
+
+.feedback__img {
+    margin-left: 60px;
+}
+
+.feedback__slider {
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.feedback__slider--left {
+    margin-right: 50px;
+}
+.feedback__slider--right {
+    margin-left: 50px;
+}
+
 
 /* Blog */
 .post__title {
