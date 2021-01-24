@@ -166,9 +166,6 @@ body {
 
 /*logo*/
 
-.logo {
-    
-}
 /* Right block personal +social */
 .personal-social {
     display: flex;
@@ -459,13 +456,12 @@ body {
 /* Story */
 .story {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .story__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .story__title {
@@ -476,8 +472,9 @@ body {
     width: 480px;
     text-align: left;
     line-height: 2;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-right: 200px;
 }
 
 .btn--green {
@@ -563,17 +560,16 @@ body {
 }
 .blog__title {
     align-self: flex-start;
-    padding-left: 360px;
     padding-top: 100px;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
+    align-self: center;
 }
 
 .blog__post {
     display: flex;
-    width: 100%; 
 }
 .post__img {
-    padding-left: 360px;
+    margin-right: 60px;
 }
 .post__content {
     display: flex;
@@ -585,18 +581,16 @@ body {
     font-size: 30px;
     color: #f2612d;
     font-family: Muli-ExtraBold;
-    margin-left: 60px;
 } 
 .post__date {
     color: #1e1e1e; 
     font-size: 16px;
-    margin-left: 60px;
 }
 
 .post__text {
     width: 476px;
-    margin-left: 125px;
-    align-self: flex-end;
+    margin-left: 45px;
+    align-self: center;
     line-height: 2;
 }
 
@@ -655,7 +649,7 @@ body {
 .footer-top {
     background-color: #f6ab3b;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-top__logo {
@@ -678,9 +672,6 @@ body {
 
 .footer-top__box-title {
     margin-bottom: 34px; 
-}
-
-.footer-menu__list {
 }
 
 .footer-menu__list > .menu__item > .menu__link {
@@ -727,6 +718,12 @@ body {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+
+input {
+    background-image: url(/assets/images/Footer-mail-icon.png);
+    background-repeat: no-repeat;
+    background-position: left; 
 }
 
 .footer-top__subscribe-text {
@@ -780,6 +777,17 @@ input::-webkit-input-placeholder {
 .footer-bottom__top {
     font-size: 16px;
 
+}
+
+.footer-bottom__btn {
+    border: none;
+    background: none;
+}
+
+.footer-bottom__img {
+    background-color: #f2662f;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 
