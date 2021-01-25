@@ -554,47 +554,47 @@ body {
 
 .blog {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.blog__title {
-    align-self: flex-start;
     padding-top: 100px;
-    margin-bottom: 50px;
+    padding-bottom: 200px;
+}
+
+.blog__container {
+}
+
+.blog__content {
     align-self: center;
 }
-
-.blog__post {
-    display: flex;
+.container__title {
+    padding-bottom: 50px;
 }
-.post__img {
+
+.container__img {
     margin-right: 60px;
 }
-.post__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.blog__content {
 
 }
-.post__title {
+.content__title {
     font-size: 30px;
     color: #f2612d;
     font-family: Muli-ExtraBold;
+    margin-bottom: 20px;
 } 
-.post__date {
+.content__date {
     color: #1e1e1e; 
     font-size: 16px;
 }
 
-.post__text {
+.content__text {
     width: 476px;
-    margin-left: 45px;
-    align-self: center;
+    padding-left: 45px;
     line-height: 2;
+    margin-top: 45px;
 }
 
-.post__text-link {
+.content__text-link {
     color: #1e1e1e; 
     font-family: 'Muli-ExtraBoldItalic';
     font-size: 18px;
@@ -606,7 +606,6 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding-top: 200px;
     margin-bottom: 45px;
 }
 
@@ -693,7 +692,9 @@ body {
 
 .footer-top__payments-icon {
     width: 280px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 
@@ -723,7 +724,7 @@ body {
 input {
     background-image: url(/assets/images/Footer-mail-icon.png);
     background-repeat: no-repeat;
-    background-position: left; 
+    background-position: left = left center = center left = 0% 50%; 
 }
 
 .footer-top__subscribe-text {
@@ -793,7 +794,6 @@ input::-webkit-input-placeholder {
 
 
 /* Здесь будут медиа запросы */
-
 
 
 
