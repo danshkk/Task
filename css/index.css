@@ -168,16 +168,21 @@ body {
 
 /* Right block personal +social */
 .personal-social {
+    width: 420px;
     display: flex;
     align-items: center;
+    border: 1px solid white;
+    position: relative;
 }
-
+/* personal*/
 .header__personal {
     margin-right: 135px;
 }
-/* personal*/
+
 .personal__list {
     display: flex;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .personal__list-item {
@@ -188,11 +193,13 @@ body {
     margin-right: 0px;
 }
 
+.personal__link:last-child {
+    position: relative;
+}
+
 .personal__cart-count {
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -201,6 +208,12 @@ body {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     text-align: center;
+    line-height: 2;
+    font-size: 10px;
+    color: #000000;
+    position: absolute;
+    bottom: 20px;
+    right: -15px;
     
 }
 
@@ -208,6 +221,7 @@ body {
 /*social*/
 .social__list {
     display: flex;
+    border: 1px solid red;
 } 
 
 .social__list-item {
