@@ -738,7 +738,28 @@ margin-right: 60px;
     color: #1e1e1e; 
     font-family: 'Muli-ExtraBoldItalic';
     font-size: 18px;
+    position: relative;
+    
 }
+
+.content__text-link::after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background-image:url(../assets/images/-e-Blog-Arrow-yellow.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    right: -30%;
+    
+}
+
 
 /* Instagram */
 
@@ -790,7 +811,7 @@ margin-right: 60px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 90px;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
 .footer-top__logo {
@@ -919,8 +940,13 @@ margin-right: 60px;
 /*Footer-Bottom*/
 .footer-bottom {
     background-color: #6c2c1c;
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    position: relative;
 }
 
 
@@ -929,20 +955,32 @@ margin-right: 60px;
     color: #af8a82;
 }
 
-.footer-bottom__top {
-    font-size: 16px;
+.footer-bottom__button {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 100px;
 
+}
+
+.footer-bottom__go-top {
+    font-size: 16px;
+    padding-right: 15px;
 }
 
 .footer-bottom__btn {
     border: none;
     background: none;
+    position: relative;
+    bottom: 35px;
 }
-/*
+
 .footer-bottom__img {
     background-color: #f2662f;
     border-radius: 5px;
-    padding: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 14px 19px 11px 18px;
 }
 
 
