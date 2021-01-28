@@ -153,6 +153,19 @@ body {
     margin-right: 35px;
 }
 
+.menu__link:hover {
+    font-size: 20px;
+}
+
+.menu__link:active {
+    color: #0aa566;
+}
+
+.menu__link:focus {
+    font-size: 20px;
+}
+
+
 .menu__item:last-child {
     margin-right: 0px;
 }
@@ -176,6 +189,7 @@ body {
     width: 420px;
     display: flex;
     align-items: center;
+
 }
 /* personal*/
 .header__personal {
@@ -300,6 +314,19 @@ body {
     background-image: url(../assets/images/Btn-arrow-yellow.png);
     background-size:cover;
     right: 40px;
+}
+
+
+
+.btn--green-bg:hover:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    background-image: url(../assets/images/Btn-arrow-yellow.png);
+    background-size:cover;
+    right: 30px;
 }
 
 /* Smoothies */
@@ -458,6 +485,7 @@ li.about__list-item {
     padding-left: 30px;
 }
 
+
 .about__btn::after {
     content: "";
     position: absolute;
@@ -467,6 +495,16 @@ li.about__list-item {
     display: inline-block;
     right: 40px;
 
+}
+
+.about__btn:hover:after {
+    content: "";
+    position: absolute;
+    background-image:url(../assets/images/Btn-arrow-yellow.png);
+    height: 16px;
+    width: 30px;
+    display: inline-block;
+    right: 30px;
 }
 
 /* Products */
@@ -530,7 +568,20 @@ li.about__list-item {
     height: 16px;
     background-image:url(../assets/images/Btn-arrow-white.png);
     position: relative;
-}
+    
+} 
+
+.btn--white-border:hover::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    background-image:url(../assets/images/Btn-arrow-white.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+    left: 10px;
+} 
 
 
 
@@ -562,13 +613,23 @@ margin-right: 60px;
     position: relative;
 }
 
-.btn--green::after{
+.btn--green::after {
     content: "";
     display: inline-block;
     width: 30px;
     height: 16px;
-    background-image:url(../assets/images/Btn-arrow-yellow.png)
+    background-image:url(../assets/images/Btn-arrow-yellow.png);
+    position: relative;
 
+}
+
+.btn--green:hover::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    background-image:url(../assets/images/Btn-arrow-yellow.png);
+    left: 10px;
 }
 
 .story__img {
@@ -757,6 +818,24 @@ margin-right: 60px;
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     right: -30%;
+    
+}
+
+.content__text-link:hover:after {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background-image:url(../assets/images/-e-Blog-Arrow-yellow.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    right: -40%;
     
 }
 
