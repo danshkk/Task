@@ -582,7 +582,7 @@ li.about__list-item {
 }
 
 .story__content {
-margin-right: 60px;
+margin-right: 200px;
 }
 
 .story__text {
@@ -618,8 +618,19 @@ margin-right: 60px;
     background-color: #28986b;
 }
 
-.story__img {
+.story-image {
+    position: relative;
+}
 
+.story-image::after {
+    content: "";
+    background-size:cover;
+    background-image:url(../assets/images/Story-Cloud-text.png);
+    width: 290px;
+    height: 216px;
+    position: absolute;
+    top: 20px;
+    left: -180px;
 }
 
 
@@ -698,6 +709,8 @@ margin-right: 60px;
     font-family: 'Muli-SemiBoldItalic';
     align-self:center;
 }
+
+
 
 .feedback__img {
     margin-left: 60px;
@@ -1001,7 +1014,6 @@ margin-right: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
     position: relative;
 }
 
