@@ -683,12 +683,28 @@ margin-right: 60px;
     margin-right: 60px;
 }
 
+.container__img {
+    position: relative;
+    z-index: 2;
+
+}
+
 .blog__content {
     align-self: flex-end;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
-    
+    position: relative;
+}
+
+.blog__content::before {
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 680px;
+    background-color: #f7ae3b;
+    position: absolute;
+    top: -50px;
+    right: -50px;
 
 }
 .container__title {
@@ -703,7 +719,7 @@ margin-right: 60px;
     font-size: 30px;
     color: #f2612d;
     font-family: Muli-ExtraBold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 } 
 .content__date {
     color: #1e1e1e; 
@@ -712,8 +728,8 @@ margin-right: 60px;
 }
 
 .content__text {
-    width: 520px;
-    padding-left: 45px;
+    width: 550px;
+    padding-left: 70px;
     line-height: 2;
     padding-bottom: 40px;
 }
@@ -772,25 +788,26 @@ margin-right: 60px;
 .footer-top {
     background-color: #f6ab3b;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 90px;
+    padding-top: 90px;
 }
 
 .footer-top__logo {
-    padding-top: 130px;
-    padding-bottom: 165px;
+    align-self: center;
     padding-left: 100px;
 }
+
+/*FOOTER MENU*/
 .footer-top__block {
     display: flex;
-    padding-top: 80px;
-    
-
+    padding-right: 100px;
 }
-/*FOOTER MENU*/
+
 .footer-top__menu {
     display: flex;
     flex-direction: column;
-    margin-right: 180px;
+    margin-right: 115px;
 }
 
 .footer-top__box-title {
@@ -810,7 +827,7 @@ margin-right: 60px;
 .footer-top__payment {
     display: flex;
     flex-direction: column;
-    margin-right: 180px;
+    margin-right: 115px;
 }
 
 
@@ -832,7 +849,6 @@ margin-right: 60px;
 .footer-top__subscribe {
     display: flex;
     flex-direction: column;
-    padding-right: 60px;
 }
 
 .footer-top__subscribe-input {
@@ -875,9 +891,22 @@ margin-right: 60px;
     margin-right: 0;
 }
 
-    .footer-top__subscribe-text {
+.footer-top__subscribe-text {
         font-size: 18px;
         color: #6d450c;
+        position: relative;
+}
+
+.footer-top__subscribe-text::before {
+    content: "";
+    display: inline-block;
+    width: 48px;
+    height: 43px;
+    position:absolute;
+    background-image:url(../assets/images/Footer-arrow-subs.png);
+    bottom: 0;
+    left: -65%;
+    
 }
 
     .footer-top__box-title {
@@ -890,7 +919,6 @@ margin-right: 60px;
 /*Footer-Bottom*/
 .footer-bottom {
     background-color: #6c2c1c;
-    padding: 20px 0;
     display: flex;
     justify-content: center;
 }
@@ -910,7 +938,7 @@ margin-right: 60px;
     border: none;
     background: none;
 }
-
+/*
 .footer-bottom__img {
     background-color: #f2662f;
     border-radius: 5px;
