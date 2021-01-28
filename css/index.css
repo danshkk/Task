@@ -412,6 +412,7 @@ body {
     color: white;
     max-width: 620px;
     line-height: 55px;
+    letter-spacing: -1px;
 
 }
 .title--green {
@@ -426,8 +427,8 @@ body {
     height: 13px;
     background-image:url(../assets/images/About-line.png);
     position: absolute;
-    right: 0px;
-    top: 64px;
+    right: -10px;
+    bottom: -10px;
 }
 
 .about__list {
@@ -586,17 +587,15 @@ margin-right: 60px;
 }
 
 .feedback::after {
-    content: "Sarah A";
-    font-family: "Muli-ExtraBold";
-    font-size: 200px;
-    color: rgb(82, 25,5);
-    opacity: 60%;
+    content: "";
     position: absolute;
-    top: 220px;
-    right: 710px;
-    z-index: 1;
-    display: inline-block;
-}
+    width: 410px;
+    height: 300px;
+    background-image:url(../assets/images/Psevdo-Dots.png);
+    background-size: cover;
+    top: -85px;
+    right: 60px;
+} 
 
 .feedback__title {
     padding-top: 115px;
@@ -610,11 +609,33 @@ margin-right: 60px;
     display: flex;
 }
 
-.feedback__content-subject {
+.feedback__content-citate {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    position: relative;
+}
+
+.feedback__content-citate::after {
+    content: "Sarah A";
+    display: inline-block;
+    color: rgb(82, 25, 5);
+    font-family: 'Muli-ExtraBold';
+    font-size: 200px;
+    opacity: 60%;
+    position: absolute;
+    width: 790px;
+    z-index: 1;
+    letter-spacing: -4px;
+    text-align: center;
+    top: -35%;
+    left: -165px;
+
+
+}
+
+.feedback__text, .feedback__subtext, .feedback__img {
+    z-index: 2;
 }
 
 .feedback__text {
@@ -622,7 +643,6 @@ margin-right: 60px;
     text-align: center;
     line-height: 2;
     margin-top: 40px;
-    z-index: 2;
 }
 
 .feedback__subtext {
@@ -630,12 +650,10 @@ margin-right: 60px;
     font-size: 18px;
     font-family: 'Muli-SemiBoldItalic';
     align-self:center;
-    z-index: 2;
 }
 
 .feedback__img {
     margin-left: 60px;
-    z-index: 2;
 }
 
 .feedback__slider {
@@ -669,6 +687,7 @@ margin-right: 60px;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
     
 
 }
@@ -689,14 +708,14 @@ margin-right: 60px;
 .content__date {
     color: #1e1e1e; 
     font-size: 16px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .content__text {
-    width: 480px;
+    width: 520px;
     padding-left: 45px;
     line-height: 2;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .content__text-link {
@@ -871,7 +890,7 @@ margin-right: 60px;
 /*Footer-Bottom*/
 .footer-bottom {
     background-color: #6c2c1c;
-    padding: 25px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
 }
