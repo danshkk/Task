@@ -14,7 +14,34 @@
 <body>
     <header class="header">
         <div class="header__top">
-                    <nav class="header__menu menu">
+            <div class="header__personal-mob personal">
+                <nav>
+                <ul class="personal-mob__list">
+                    <li class="personal-mob__list-item">
+                        <a class="personal-mob__link" href="">
+                            <img class="personal-mob__icon" src="./assets/images/Search-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="personal-mob__list-item" >
+                        <a class="personal-mob__link" href="">
+                            <img class="personal-mob__icon" src="./assets/images/User-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="personal-mob__list-item">
+                        <a class="personal-mob__link" href="">
+                            <img class="personal-mob__icon" src="./assets/images/Cart-icon.png" alt="">
+                            <span class="personal-mob__cart-count">3</span>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            <button class="header__burger-btn">
+                <img class="header__burger-btn-icon" src="./assets/images/menu.svg" alt="">
+            </button>
+            
+            <div class="header__navigation">
+                                    <nav class="header__menu menu">
                         <ul class="menu__list title-small">
                             <li class="menu__item">
                                 <a class="menu__link" href="">Home</a>
@@ -36,11 +63,6 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="header__logo logo">
-                        <a class="logo__link" href="">
-                            <img class="logo__img" src="./assets/images/Header-logo.png" alt="">
-                        </a>
-                    </div>
                     <div class="header__personal-social personal-social">
                         <div class="header__personal personal">
                             <nav>
@@ -85,15 +107,20 @@
                             </ul>
                             </nav>
                         </div>
-                    </div>                    
+                    </div>
+            </div>
+            
+            <div class="header__logo logo">
+                <a class="logo__link" href="">
+                    <img class="logo__img" src="./assets/images/Header-logo.png" alt="">
+                </a>
+            </div>
         </div>
         <div class="header__content">
             <button class="header__btn btn btn--green-bg">Shop now
             </button>
         </div>
     </header>
-
-    
         <section class="smoothies">
             <h2 class="smoothies__title title">What are these smoothies?</h2>
             <p class="smoothies__text text-dark">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or syrup), whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements.</p>
@@ -211,7 +238,7 @@
             </div>
         </section>
         <section class="instagram">
-            <a class="instagram__link title title--green-link" href="URL"> <img class="instagram__icon" src="./assets/images/Blog-Insta-greenicon.png" alt=""> ashasuperfoods  </a>
+            <a class="instagram__link title title--green-link" href="URL"> <img class="instagram__icon" src="./assets/images/Blog-Insta-greenicon.png" alt="">ashasuperfoods</a>
             <div class="instagram__post">
                 <img class="instagram__img" src="./assets/images/Instagram-post-1.png" alt="">
                 <img class="instagram__img" src="./assets/images/Instagram-post-2.png" alt="">
