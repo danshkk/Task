@@ -14,13 +14,46 @@
 <body>
     <header class="header">
         <div class="header__top">
-                <div id="menu-bar">
-                    <div id="menu" onclick="onClickMenu()">
-                        <div id="bar1" class="bar"></div>
-                        <div id="bar2" class="bar"></div>
-                        <div id="bar3" class="bar"></div>
+            <div class="menu-bg" id="menu-bg">
+                <ul class="nav" id="nav">
+                    <div class="icons-sociale-personale">
+                        <ul class="personale-mob__list">
+                            <li class="personale-mob__list-item">
+                                <a class="personale-mob__link" href="">
+                                    <img class="personale-mob__icon" src="./assets/images/Search-icon.png" alt="">
+                                </a>
+                            </li>
+                            <li class="personale-mob__list-item" >
+                                <a class="personale-mob__link" href="">
+                                    <img class="personale-mob__icon" src="./assets/images/User-icon.png" alt="">
+                                </a>
+                            </li>
+                            <li class="personale-mob__list-item">
+                                <a class="personale-mob__link" href="">
+                                    <img class="personale-mob__icon" src="./assets/images/Cart-icon.png" alt="">
+                                    <span class="personale-mob__cart-count">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sociale__list">
+                            <li class="sociale__list-item">
+                                <a class="sociale__link" href="">
+                                    <img class="sociale__icon" src="./assets/images/Facebook-icon-header.png" alt="">
+                                </a>
+                            </li>
+                            <li class="sociale__list-item" >
+                                <a class="sociale__link" href="">
+                                    <img class="sociale__icon" src="./assets/images/Pinterest-icon-header.png" alt="">
+                                </a>
+                            </li>
+                            <li class="sociale__list-item">
+                                <a class="sociale__link" href="">
+                                    <img class="sociale__icon" src="./assets/images/Instagram-icon-header.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="nav" id="nav">
+                    <div class="nav-items">
                         <li class="nav__item">
                             <a class="nav__link" href="">Home</a>
                         </li>
@@ -39,9 +72,17 @@
                         <li class="nav__item">
                             <a class="nav__link" href="">Testimonials</a>
                         </li>
-                    </ul>
+                    </div>
+                </ul>
+                <div id="menu-bar">
+                    <div id="menu" onclick="onClickMenu()">
+                        <div id="bar1" class="bar"></div>
+                        <div id="bar2" class="bar"></div>
+                        <div id="bar3" class="bar"></div>
+                    </div>
+
                 </div>
-                <div class="menu-bg" id="menu-bg"></div>
+                </div>
             <div class="header__mobile-wrapper">
                 <div class="header__personal-mob personal">
                     <nav>
@@ -286,7 +327,7 @@
                 </div>
                 <div class="footer-top__block">
                     <div class="footer-top__menu footer-menu">
-                        <h3 class="footer-top__box-title">Information</h3>
+                        <h3 class="footer-top__box-title footer-information">Information</h3>
                         <nav class="footer-menu">
                             <ul class="footer-menu__list title-small title-small--dark">
                                 <li class="menu__item"><a class="menu__link" href="">Search</a></li>
@@ -297,7 +338,7 @@
                         </nav>
                     </div>
                     <div class="footer-top__payment">
-                        <h3 class="footer-top__box-title">Payment</h3>
+                        <h3 class="footer-top__box-title footer-payment">Payment</h3>
                         <div class="footer-top__payments-icon">
                             <img class="footer-top__payment-icon" src="./assets/images/Footer-Payment-1.png" alt="">
                             <img class="footer-top__payment-icon" src="./assets/images/Footer-Payment-2.png" alt="">
@@ -311,7 +352,7 @@
                         </div>
                     </div>
                     <div class="footer-top__subscribe">
-                        <h3 class="footer-top__box-title">Don't miss out!</h3>
+                        <h3 class="footer-top__box-title footer-subscribe">Don't miss out!</h3>
                         <input class="footer-top__subscribe-input" type="email" name="email" img class="" placeholder="Subscribe to our newsletter">
                         <div class="footer-top__social-container">
                             <span class="footer-top__subscribe-text title-small title-small--brown">FOLLOW US</span>
