@@ -139,6 +139,11 @@ body {
     padding: 70px 100px 100px; 
     position: relative;
 }
+.header__line {
+    width: 100%;
+    background-color:#0aa566;
+
+}
 
 .header__navigation {
     display: flex;
@@ -1251,7 +1256,7 @@ margin-right: 200px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /*SMOOTHIES*/
     .smoothies__title {
         padding-top: 30px;
@@ -1316,6 +1321,7 @@ margin-right: 200px;
         position: static;
         margin-right: 0;
         margin-top: 15px;
+        width: 80%;
     }
     .about__btn {
         width: 340px;
@@ -1479,8 +1485,178 @@ margin-right: 200px;
     .footer-top__social-container {
         display: none;
     }
+    .footer-top {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .footer-top__block {
+        flex-wrap: wrap;
+        padding: 15px 0 35px 0;
+    }
+    .footer-menu {
+        padding-left: 5px;
+    }
+    .footer-top__menu {
+        align-items: flex-start;
+    }
+    .footer-top__payment {
+        align-items: flex-end;
+    }
+    .footer-top__menu, .footer-top__payment {
+        flex-basis: 50%;
+        margin: 0;
+    }
+    .footer-top__payments-icon {
+        max-width: 180px;
+    }
+    .footer-top__payment-icon {
+        margin: 0 10px 10px 0;
+    }
+    .menu__item {
+        margin: 0 0 10px 0;
+    }
+    .footer-top__subscribe {
+        flex-basis: 100%;
+    }
+    .footer-top__subscribe-input {
+        width: 350px;
+        align-self:center;
+        margin-bottom: 0;
+    }
 }
 
-@media screen and (min-width: 550px) and (max-width: 767px)  {
+
+@media screen and (min-width: 450px) and (max-width: 767px)  {
+    .smoothies__feature {
+        flex-basis: 25%;
+    }
+    .smoothies__feature:nth-child(5), .smoothies__feature:nth-child(6) {
+        border-bottom: none; 
+    }
+    .about__img {
+    position: static;
+    align-items: center;
+    width: 65%;
+    }
+    .about__btn {
+        align-self: flex-start; 
+    }
+    .about__content {
+        align-items: baseline;
+    }
+    .about__container {
+        align-items: center;
+    }
+    .products__item {
+        flex: 0 0 55%;
+        margin: 15px 30px 30px 15px;
+    }
+    .story__img {
+        width: 70%;
+    }
+    .instagram__img {
+        margin-right: 10px;
+    }
+    .footer-top__menu, .footer-top__payment {
+        align-items:center;
+    }
+    .footer-top__subscribe-input {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 767px) {
+    .blog__content {
+        align-self: center;
+    }
+    .content__text {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    /*SMOOTHIES*/
+    .smoothies {
+        padding: 0 20px;
+    }
+    .smoothies__title {
+        padding-top: 40px;
+    }
+    .smoothies__text {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .smoothies__features {
+        padding-bottom: 30px;
+    }
+    .smoothies__feature {
+        flex-basis: 25%;
+    }
+    /*ABOUT*/
     
+    /*PRODUCTS*/
+    .products {
+    overflow: scroll;
+    }
+    .products__item {
+        margin: 15px 15px 30px 15px;
+        border-radius: 50px    ;
+        -webkit-border-radius: 50px    ;
+        -moz-border-radius: 50px    ;
+        -ms-border-radius: 50px    ;
+        -o-border-radius: 50px    ;
+        -webkit-box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.6); 
+        box-shadow: 15px 15px 20px 0px rgba(0,0,0,0.6);
+        flex: 1 0 42%;
+    }
+    .products__img {
+        padding-top: 90px;
+    }
+    .products__capacity {
+        margin-bottom: 35px;
+    }
+    .products__btn {
+        margin-bottom: 60px;
+    }
+    /*STORY*/
+    .story {
+        padding: 75px 15px;
+    }
+    .story-image::after {
+    display: none;
+    }
+    .story__content {
+        margin-right: 10px;
+    }
+    .story__text {
+        margin: 30px 0;
+    }
+    .story__img {
+        width: 100%;
+    }
+    /*FEEDBACK*/
+    .feedback {
+        padding: 50px 10px;
+    }
+    .feedback::after {
+        display: none;
+    }
+    .feedback__content-citate::after {
+        font-size: 150px;
+        top: -15%;
+        left: -20%;
+    }
+    .feedback__title, .feedback__slider {
+        padding: 0;
+    }
+    .feedback__title {
+        margin-bottom: 50px;
+    }
+    .feedback__slider {
+        margin-top: 60px;
+    }
+
+    /*BLOG*/
+    /*INSTAGRAM*/
+    /*FOOTER*/
 }
