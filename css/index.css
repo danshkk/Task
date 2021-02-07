@@ -356,6 +356,7 @@ nav li a:hover {
     -ms-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     display: none;
+    text-align: center;
 }
 
 .menu-bg, #menu-bar {
@@ -364,24 +365,25 @@ nav li a:hover {
     position: fixed;
 }
 .menu-bg{
-    z-index: 1;
+    z-index: 99;
     width: 0;
-    height: 0;
+    height: 10;
     background-color: #11816d;
-    transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
 }
 #menu-bar{
-    z-index: 2;
+    z-index: 20;
     display: none;
 }
 .change-bg{
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
+
 .change .bar{
     background-color: #f8b231;
 }
@@ -470,13 +472,85 @@ nav li a:hover {
 }
 
 /*BURGER IN MENU*/
-.change #nav {
-
+.icons-sociale-personale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+}
+.personale-mob__list {
+    display: flex;
+}
+.personale-mob__list-item {
+    margin-right: 20px;
+}
+.personale-mob__list-item:last-child {
+    margin-right: 0;
+}
+.sociale__list {
+    display: flex;
+}
+.sociale__list-item {
+    margin-right: 10px;
+}
+.sociale__list-item:last-child {
+    margin-right: 0;
+}
+.sociale__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    max-width: 35px;
+    background-color: white;
+    text-align: center;
+    line-height: 2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.personale-mob__link {
+    position: relative;
 }
 
+.personale-mob__cart-count {
+    background-color: white;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+    font-size: 10px;
+    color: black;
+    position: absolute;
+    bottom: 30px;
+    right: -15px;
+}
+.nav-items {
+    margin-top: 35px;
+}
+.nav li {
+    padding: 10px 0;
+}
+.nav li a {
+    color: white;
+    text-transform: uppercase;
+    font-family: Muli-regular;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
 /* header content*/
-
-
 .header__content {
     display: flex;
     justify-content: center;
@@ -1573,8 +1647,20 @@ margin-right: 200px;
         padding-left: 0;
     }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1365px) {
+    /*BURGER MENU*/
+    .nav li a {
+        font-size: 22px;
+    }
+    .nav li {
+        padding: 25px 0;
+    }
+    .personale-mob__list-item {
+        margin-right: 35px;
+    }
+    .sociale__list-item {
+        margin-right: 25px;
+    }
     /*SMOOTHIES*/
     .smoothies {
         padding: 0 20px;
@@ -1820,4 +1906,73 @@ margin-right: 200px;
 
 
 }
+@media screen and (min-width: 1366px) and (max-width: 1530px) {
+    /*BURGER MENU*/
+    .nav li a {
+        font-size: 22px;
+    }
+    .nav li {
+        padding: 25px 0;
+    }
+    .personale-mob__list-item {
+        margin-right: 35px;
+    }
+    .sociale__list-item {
+        margin-right: 25px;
+    }
+    .smoothies__title {
+        padding-top: 60px;
+    }
+    .smoothies__text {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .about__list {
+        margin-top: 55px;
+        margin-bottom: 40px;
+    }
+    .about__img {
+        top: 70px;
+        right: -25px;
+        margin-right: 70px;
+    }
+    .story {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .blog {
+        padding-bottom: 100px;
+        padding-top: 80px;
 
+    }
+    .footer-top {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-top__menu, .footer-top__payment {
+        margin-right: 80px;
+    }
+    .footer-top__block {
+        padding-right: 0;
+    }
+    .footer-top__logo {
+        margin-right: 45px;
+    }
+}
+
+@media screen and (min-width: 1531px) and (max-width: 1630px) {
+    .header__top {
+        padding: 70px 50px 100px;
+    }
+    .about__img {
+        margin-right: 80px;
+        right: 40px;
+    }
+    .footer-top {
+        padding-left: 50px;
+        padding-right: 45px;
+    }
+    .footer-top__block {
+        padding-right: 0;
+    }
+}
