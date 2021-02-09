@@ -350,11 +350,11 @@ nav li a:hover {
 .nav {
     padding: 0;
     margin: 0 20px;
-    transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
     display: none;
     text-align: center;
 }
@@ -1317,7 +1317,6 @@ margin-right: 200px;
 }
 
 /* Здесь будут медиа запросы */
-
 @media (max-width: 1530px) {
     .header__burger-btn {
         display: block;
@@ -1329,7 +1328,6 @@ margin-right: 200px;
         display: block;
     }
 }
-
 @media screen and (max-width: 767px) {
     /*SMOOTHIES*/
     .smoothies__title {
@@ -1407,6 +1405,7 @@ margin-right: 200px;
     /*PRODUCTS*/
     .products {
         overflow: scroll;
+        padding-bottom: 10px;
     }
     .products__item {
         margin: 15px 15px 30px 15px;
@@ -1526,10 +1525,9 @@ margin-right: 200px;
         margin-bottom: 10px;
     }
     .content__text {
-        padding-left: 30px;
+        padding-left: 15px;
         padding-bottom: 20px;
         line-height: 34px;
-        text-indent: 15px;
     }
     .content__date {
     margin-bottom: 10px;
@@ -1597,9 +1595,10 @@ margin-right: 200px;
         align-self:center;
         margin-bottom: 0;
     }
+    .footer-bottom__btn {
+        left: 100%;
+    }
 }
-
-
 @media screen and (min-width: 450px) and (max-width: 767px)  {
     .smoothies__feature {
         flex-basis: 25%;
@@ -1638,7 +1637,6 @@ margin-right: 200px;
         width: 450px;
     }
 }
-
 @media screen and (min-width: 580px) and (max-width: 767px) {
     .blog__content {
         align-self: center;
@@ -1705,11 +1703,10 @@ margin-right: 200px;
         margin: 20px 0;
         line-height: 39px;
     }
-
-    
     /*PRODUCTS*/
     .products {
     overflow: scroll;
+    padding-bottom: 10px;
     }
     .products__item {
         margin: 15px 15px 30px 15px;
@@ -1768,7 +1765,6 @@ margin-right: 200px;
     .feedback__slider {
         margin-top: 60px;
     }
-
     /*BLOG*/
     .blog {
         padding: 30px 0px;
@@ -1811,7 +1807,7 @@ margin-right: 200px;
         overflow: auto;
     }
     .instagram__img {
-        width: 50%;
+        width: 40%;
         margin-right: 10px;
     }
     /*FOOTER*/
@@ -1825,7 +1821,6 @@ margin-right: 200px;
         padding: 15px 0;
         flex-wrap: wrap;
     }
-
     .footer-top__menu, .footer-top__payment {
     margin-right: 0px;
     flex: 1 0 50%;
@@ -1902,17 +1897,17 @@ margin-right: 200px;
         align-self: flex-end;
         padding-right: 30px;
     }
-
-
-
 }
 @media screen and (min-width: 1366px) and (max-width: 1530px) {
     /*BURGER MENU*/
+    .icons-sociale-personale {
+        padding-top: 30px;
+    }
     .nav li a {
         font-size: 22px;
     }
     .nav li {
-        padding: 25px 0;
+        padding: 20px 0;
     }
     .personale-mob__list-item {
         margin-right: 35px;
@@ -1943,7 +1938,6 @@ margin-right: 200px;
     .blog {
         padding-bottom: 100px;
         padding-top: 80px;
-
     }
     .footer-top {
         padding-left: 20px;
@@ -1959,7 +1953,6 @@ margin-right: 200px;
         margin-right: 45px;
     }
 }
-
 @media screen and (min-width: 1531px) and (max-width: 1630px) {
     .header__top {
         padding: 70px 50px 100px;
