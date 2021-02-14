@@ -1,0 +1,38 @@
+// main: ./../main.less
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    &__content {
+        margin-right: 200px;
+    }
+    &__text {
+        max-width: 480px;
+        text-align: left;
+        line-height: 35px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+    &-image {
+        position: relative;
+        &::after {
+            content: "";
+            background-size:cover;
+            background-image:url(../assets/images/Story-Cloud-text.png);
+            width: 290px;
+            height: 216px;
+            position: absolute;
+            top: 20px;
+            left: -180px;
+        }
+    }
+}
+
+
+
+
+
+
+

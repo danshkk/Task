@@ -1,0 +1,32 @@
+// main: ./../main.less
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 35px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Muli-Bold', sans-serif;
+        color: white;
+        &:hover {
+            font-size: 20px;
+        }
+        &:active {
+            color: @colorSecondary;
+        }
+        &:focus {
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+

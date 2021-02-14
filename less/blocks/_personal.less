@@ -1,0 +1,35 @@
+// main: ./../main.less
+.personal__list {
+    display: flex;
+    align-items: center;
+    &-item {
+        margin-right: 45px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+}
+
+.personal__link:last-child {
+    position: relative;
+}
+
+.personal__cart-count {
+    background-color: white;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+    font-size: 10px;
+    color: #000000;
+    position: absolute;
+    bottom: 20px;
+    right: -15px;
+}

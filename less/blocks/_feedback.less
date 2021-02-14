@@ -1,0 +1,77 @@
+// main: ./../main.less
+.feedback {
+    background-color: #672f1b;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 410px;
+        height: 300px;
+        background-image:url(../assets/images/Psevdo-Dots.png);
+        background-size: cover;
+        top: -85px;
+        right: 60px;
+    }
+    &__title {
+        padding-top: 115px;
+        margin-bottom: 120px;
+    }
+    &__content {
+        display: flex;
+    }
+    &__content-citate {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        &::after {
+            content: "Sarah A";
+            display: inline-block;
+            color: rgb(82, 25, 5);
+            font-family: 'Muli-ExtraBold';
+            font-size: 200px;
+            opacity: 60%;
+            position: absolute;
+            width: 790px;
+            z-index: 1;
+            letter-spacing: -4px;
+            text-align: center;
+            top: -35%;
+            left: -165px;
+        }
+    }
+    &__text {
+        max-width: 470px;
+        text-align: center;
+        line-height: 2;
+        margin-top: 40px;
+        z-index: 2;
+    }
+    &__subtext {
+        color: @colorMain; 
+        font-size: @fontSizeText;
+        font-family: 'Muli-SemiBoldItalic';
+        align-self:center;
+        z-index: 2;
+    }
+    &__img {
+        margin-left: 60px;
+        z-index: 2;
+    }
+    &__slider {
+        margin-top: 120px;
+        padding-bottom: 80px;
+        &--left {
+            margin-right: 50px;
+        }
+        &--right {
+            margin-left: 50px;
+        }
+    }
+}
+
+

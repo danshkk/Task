@@ -1,0 +1,61 @@
+// out: ../css/main.min.css, compress: true, sourceMap: true
+@import "./_vars.less";
+@import "./_fonts.less"; 
+@import "./_mixins.less";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn, h2, .title, h3 {
+    font-family: "Muli-ExtraBold"; 
+    color: @colorMain; 
+    font-size: @fontSizeTitle;
+}
+.menu__list, .personal__list, .social__list {
+    list-style: none;
+}
+
+// Blocks 
+
+@import "./blocks/_title.less";
+@import "./blocks/_text.less";
+@import "./blocks/_button.less";
+@import "./blocks/_header.less";
+@import "./blocks/_burger-menu.less";
+@import "./blocks/_menu.less";
+@import "./blocks/_personal.less";
+@import "./blocks/_social.less";
+@import "./blocks/_smoothies.less";
+@import "./blocks/_about.less";
+@import "./blocks/_products.less";
+@import "./blocks/_story.less";
+@import "./blocks/_feedback.less";
+@import "./blocks/_blog.less";
+@import "./blocks/_content.less";
+@import "./blocks/_instagram.less";
+@import "./blocks/_footer.less";
+
+// Медиа-запросы
+
+@import "./blocks/_media.less"; 

@@ -1,0 +1,38 @@
+// main: ./../main.less
+.blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 100px;
+    &__container {
+        margin-right: 60px;
+    }
+    &__container-title {
+        padding-bottom: 50px;
+    }
+    &__container-img {
+        position: relative;
+        z-index: 2;
+    }
+    &__content {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 12px;
+            width: 680px;
+            background-color: #f7ae3b;
+            position: absolute;
+            top: -50px;
+            right: -50px;
+        }
+    }
+}
+
+
+
+
