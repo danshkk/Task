@@ -1,1 +1,36 @@
 // main: ./main.less
+
+
+.text-styles(@textColor) {
+    font-family: 'Muli-Regular';
+    font-size: 18px;
+    line-height: 35px;
+    color: @textColor;
+}
+
+.title-styles() {
+    font-family: "Muli-ExtraBold"; 
+    color: @colorMain; 
+    font-size: @fontSizeTitle;
+}
+
+.btn-styles(@btnHeight, @btnColor, @btnBorder) {
+    height: @btnHeight;
+    background-color: @btnColor;
+    border-radius: @borderRadius;
+    border: @btnBorder;
+    padding: 0px 38px;
+    color: @textColor;
+    font-size: 21px;
+    font-family: "Muli-ExtraBold"; 
+}
+
+.btn-arrow() {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    display: inline-block;
+    right: 40px;
+}
+

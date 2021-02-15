@@ -1,13 +1,9 @@
 // main: ./../main.less
 .text-dark {
-    font-family: 'Muli-regular';
-    font-size: @fontSizeText;
-    color: #1e1e1e; 
+    .text-styles(black); 
 }
 .text-white {
-    font-family: 'Muli-Regular';
-    font-size: @fontSizeText; 
-    color: @textColor;
+    .text-styles(@textColor);
     &--bold {
         font-family: 'Muli-ExtraBold' sans-serif;
     }

@@ -1,78 +1,68 @@
 // main: ./../main.less
 .btn {
-    border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
-    font-size: 21px;
-    color: white;
-    padding: 0px 38px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 205px;
-    height: 60px;
-    background-color: transparent;
-    border: 2px solid white;
     &--green-bg {
-        border: none;
-        background-color:#0aa566; 
-        color: white;
+        .btn-styles(70px, @colorSecondary, none);
+        width: 280px;
+        border-radius: 35px;
         position: relative;
+        &::after {
+            .btn-arrow();
+            background-image: url(../assets/images/Btn-arrow-yellow.png);
+        }
         &:hover {
             background-color: #28986b;
             &:after {
                 right: 30px;
             }
         }
-        &::after {
-            content: "";
-            display: inline-block;
-            position: absolute;
-            height: 16px;
-            width: 30px;
-            background-image: url(../assets/images/Btn-arrow-yellow.png);
-            background-size:cover;
-            right: 40px;
-        }
     }
     &--green {
-        background-color:#0aa566 ;
+        .btn-styles(@btnHeight, @colorSecondary, none);
         width: 300px;
-        height: 60px;
         position: relative;
+        &::after {
+            .btn-arrow();
+            background-image:url(../assets/images/Btn-arrow-yellow.png);
+        }
         &:hover {
             background-color: #28986b;
             &::after {
-                left: 10px;
+                right: 30px;
             }
-        }
-        &::after {
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 16px;
-            background-image:url(../assets/images/Btn-arrow-yellow.png);
-            position: relative;
         }
     }
     &--white-border {
+        .btn-styles(@btnHeight, transparent, solid 2px white); 
+        width: 200px;
         margin-bottom: 80px;
         position: relative;
         &:hover {
-            border: 4px solid white;
+            border: 3px solid white;
             &::after {
-                left: 10px;
+                right: 30px;
             } 
         }
         &::after {
-            content: "";
-            display: inline-block;
-            width: 30px;
-            height: 16px;
+            .btn-arrow();
             background-image:url(../assets/images/Btn-arrow-white.png);
-            position: relative;
         } 
+    }
+    &--yellow-outline {
+        .btn-styles(@btnHeight, transparent, 2px solid #f8b231);
+        width: 380px;
+        position: relative;
+        &::after {
+            .btn-arrow();
+            background-image:url(../assets/images/Btn-arrow-yellow.png);
+        }
+        &:hover {
+            border: 3px solid #f7ae3b;
+            &::after {
+                right: 30px;
+            }
+        }
     }
 }

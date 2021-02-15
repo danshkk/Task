@@ -2,46 +2,56 @@
 .footer {
     display: flex;
     flex-direction: column;
-    &-top {
-        background-color: @colorMain;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 90px;
-        padding-top: 80px;
-        padding-left: 100px;
-        padding-right: 100px;
+    &-menu__list>.menu__item>.menu__link {
+        font-size: 18px;
+        color:#6d450c;
+        text-transform: none;
+        line-height: 2;
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.1s;
+        }
     }
-    &-top__logo {
+}
+.footer-top {
+    background-color: @colorMain;
+    display: flex; 
+    justify-content: space-between;
+    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    &__logo {
         align-self: center;
     }
-    &-top__block {
+    &__block {
         display: flex;
         padding-right: 100px;
     }
-    &-top__menu {
+    &__menu {
         display: flex;
         flex-direction: column;
         margin-right: 115px;
     }
-    &-top__box-title {
+    &__box-title {
         margin-bottom: 34px; 
     }
-    &-top__payment {
+    &__payment {
         display: flex;
         flex-direction: column;
         margin-right: 115px;
     }
-    &-top__payments-icon {
+    &__payments-icon {
         width: 280px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
-    &-top__payment-icon {
+    &__payment-icon {
         margin-right: 20px;
         margin-bottom: 25px;
     }
-    &-top__subscribe {
+    &__subscribe {
         display: flex;
         flex-direction: column;
         &-input {
@@ -61,21 +71,21 @@
             padding-left: 65px; 
         }
     }
-    &-top__social-container {
+    &__social-container {
         display: flex;
         align-items:center ;
         justify-content: flex-end;
         margin-top: 30px;
         padding-right: 50px;
     }
-    &-top__box-title {
+    &__box-title {
         font-size: 26px;
         color: white; 
     }
-    &-top__subscribe-text {
+    &__subscribe-text {
         margin-right: 45px;
     }
-    &-top__social {
+    &__social {
         align-self: flex-end;
         &__link {
             margin-right: 25px;
@@ -84,7 +94,7 @@
             }
         }
     }
-    &-top__subscribe-text {
+    &__subscribe-text {
         font-size: @fontSizeText;
         color: #6d450c;
         position: relative;
@@ -103,6 +113,9 @@
 
 
 
+
+
+
 .footer-bottom {
     background-color: #6c2c1c;
     padding-top: 25px;
@@ -111,50 +124,45 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    &__text {
+        font-size: 13px;
+        color: #af8a82;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 100px;
+    }
+    &__go-top {
+        font-size: 16px;
+        padding-right: 15px;
+    }
+    &__btn {
+        border: none;
+        width: 50px;
+        height: 50px;
+        background-color: #f2662f;
+        border-radius: 5px;
+        position: relative;
+        bottom: 35px;
+        &::after {
+            content: "";
+            background-image: url(../../assets/images/Footer-arrow-top.png);
+            width: 13px;
+            height: 25px;
+            display: inline-block;
+        }
+        &:hover {
+            position: relative;
+            bottom: 50px;
+        }
+        
+    }
 }
 
 
-.footer-bottom__text {
-    font-size: 13px;
-    color: #af8a82;
-}
 
-.footer-bottom__button {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 100px;
-
-}
-
-.footer-bottom__go-top {
-    font-size: 16px;
-    padding-right: 15px;
-}
-
-.footer-bottom__btn {
-    border: none;
-    background: none;
-    position: relative;
-    bottom: 35px;
-}
-
-.footer-bottom__img {
-    background-color: #f2662f;
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    padding: 14px 19px 11px 18px;
-}
-
-
-.footer-menu__list > .menu__item > .menu__link {
-    color:#6d450c;
-    font-size: 'Muli-ExtraBold' sans-serif;
-    text-transform: none;
-    line-height: 2;
-    
-}
 
 
 
