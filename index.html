@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
     <!-- Сюда подключаем стили -->
     
     <title>Document</title>
@@ -262,7 +263,7 @@
                     <q class="feedback__text text-white">Smoothie is great. I don't know what else to say. I will let my mum know about this, she could really make use of Smoothie! Smoothie saved my business.</q>
                     <blockquote class="feedback__subtext text--orange">- from Santa Monica, CA</blockquote>
                 </div>
-            <img class="feedback__img" src="./assets/images/Feedback-author-profile.png" alt="">
+            <img class=" feedback__img wow slideInRight" src="./assets/images/Feedback-author-profile.png" alt="">
             </div>  
             <div class="feedback__slider">
                 <a class="feedback__slider--left" href=""><img class="feedback__slider-img" src="/assets/images/Slider-arrow-yellow-left.png" alt=""></a>
@@ -348,6 +349,11 @@
 
 </body>
 <script src="./script.js"></script>
+<script src="./libraries/WOW-master/dist/wow.min.js"></script>
+
+<script>
+    new WOW(). init ();
+</script>
 </html>
 
 
